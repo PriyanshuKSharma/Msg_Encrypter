@@ -4,9 +4,9 @@ WebSocket Chat Application: A simple chat application using WebSocket, Node.js, 
 This project demonstrates a simple WebSocket-based chat application implemented using Node.js with Express for the server-side and HTML/JavaScript for the client-side.
 
 ### Features:
-Real-time Communication: Utilizes WebSocket technology to establish a real-time bidirectional communication channel between the client and server.
-Client-Server Interaction: Allows users to send text messages from the client interface to the server, and vice versa.
-Easy to Use: Simple user interface with an input field and a send button for sending messages.
+Real-time Communication: Utilizes WebSocket technology to establish a real-time bidirectional communication channel between the client and server.<br>
+Client-Server Interaction: Allows users to send text messages from the client interface to the server, and vice versa.<br>
+Easy to Use: Simple user interface with an input field and a send button for sending messages.<br>
 Logging: Logs messages exchanged between the client and server for debugging purposes.
 
 ### Project Structure:
