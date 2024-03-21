@@ -22,8 +22,8 @@ Start typing messages in the input field, and click "Send" to send messages to t
 Messages sent from the client will be logged on both the client and server sides, and the server will respond with a "Thank you!" message.
 
 ### Technologies Used:
-Node.js
-Express
+Node.js<br>
+Express<br>
 WebSocket (ws)
 
 ### Contributions:
