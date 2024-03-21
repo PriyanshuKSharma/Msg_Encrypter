@@ -1,0 +1,43 @@
+<!-- client/index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Message Encryption</title>
+<script>
+    function connectWebSocket() {
+        const socket = new WebSocket('ws://localhost:8080');
+
+        socket.onopen = function(event) {
+            console.log('WebSocket connection established.');
+        };
+
+        socket.onmessage = function(event) {
+            console.log('Message received from server:', event.data);
+        };
+
+        socket.onerror = function(error) {
+            console.error('WebSocket error:', error);
+        };
+
+        function sendMessageToServer() {
+            const messageInput = document.getElementById('messageInput');
+            const message = messageInput.value;
+            if (message.trim() !== '') {
+                socket.send(message);
+                messageInput.value = '';
+            }
+        }
+
+        document.getElementById('sendButton').addEventListener('click', sendMessageToServer);
+    }
+</script>
+</head>
+<body onload="connectWebSocket()">
+    <h1>Message Input</h1>
+    <input type="text" id="messageInput" placeholder="Type your message...">
+    <button id="sendButton">Send</button>
+</body>
+</html>
