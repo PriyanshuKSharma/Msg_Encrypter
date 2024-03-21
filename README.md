@@ -11,6 +11,7 @@ Logging: Logs messages exchanged between the client and server for debugging pur
 
 ### Project Structure:
 Client: Contains the HTML file (index.html) with JavaScript code for the client-side interface.
+<br>
 Server: Includes the server-side JavaScript file (server.js) implementing the WebSocket server using Express and ws.
 
 ### Usage:
