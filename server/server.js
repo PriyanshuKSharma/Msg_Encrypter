@@ -9,8 +9,8 @@ const wss = new WebSocketServer({ server });
 
 wss.on("connection", (ws) => {
     ws.on("message", (data) => {
-        console.log("Data from client: %s", data);
-        //console.log(data.toString());
+        console.log("Data from client: ", data);
+        //console.log(data);
         ws.send("aapka dhanyawaad.....");
     });
 });

@@ -1,0 +1,24 @@
+version: '3'
+services:
+  server:
+    build:
+      context: ../   # Set the context to the parent directory
+      dockerfile: server/Dockerfile  # Specify the path to the Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - webnet
+
+  client:
+    image: node:latest
+    volumes:
+      - ./client:/app
+    working_dir: /app
+    command: "npm start"
+    ports:
+      - "80:8080"
+    networks:
+      - webnet
+
+networks:
+  webnet:
