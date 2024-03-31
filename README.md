@@ -1,5 +1,6 @@
-# Msg_Encrypter
-WebSocket Chat Application: A simple chat application using WebSocket, Node.js, and HTML/JavaScript for real-time communication between client and server.<br>
+# WebSocket Chat Application
+WebSocket Chat Application: <br>
+A simple chat application using WebSocket, Node.js, and HTML/JavaScript for real-time communication between client and server.<br>
 ### WebSocket Chat Application
 This project demonstrates a simple WebSocket-based chat application implemented using Node.js with Express for the server-side and HTML/JavaScript for the client-side.
 
